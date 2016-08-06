@@ -1,0 +1,4 @@
+convert otocystCorrPCA.{tiff,png}
+convert otocystExcel.{tiff,png}
+convert otocystImageA.{tiff,png}
+convert otocystTitle.{tiff,png}

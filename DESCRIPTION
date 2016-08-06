@@ -1,0 +1,11 @@
+Package: BMI713pack
+Title: support for HMS BMI713
+Version: 0.0.0
+Author: VJ Carey <stvjc@channing.harvard.edu>
+Description: 
+Suggests: 
+Depends: readxl, png, grid
+Maintainer: VJ Carey <stvjc@channing.harvard.edu>
+License: Private
+LazyLoad: yes
+BiocViews:
