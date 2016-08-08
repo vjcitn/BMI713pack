@@ -1,1 +1,15 @@
 exportPattern("..*")
+
+import(rmarkdown)
+import(Gviz)
+import(EnsDb.Hsapiens.v75)
+import(ensembldb)
+import(airway)
+
+importFrom("readxl", "read_excel")
+importFrom("GenomeInfoDb", "seqlevelsStyle<-")
+
+importFrom("png", "readPNG")
+importFrom("grid", "grid.raster")
+importFrom("microbenchmark", "microbenchmark") 
+
