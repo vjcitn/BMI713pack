@@ -6,6 +6,7 @@
 \alias{impath}
 \alias{myst}
 \alias{plotImage}
+\alias{vcImages}
 \docType{package}
 \title{
 \packageTitle{BMI713pack}
@@ -30,6 +31,8 @@ to report on comparative performance of two functions
 \code{impath} is used to render a display of the mouse otocyst
 
 \code{plotImage} is used to render a display from a publication
+
+\code{vcImages} is used to retrieve png files for rendering in lecture slides
 }
 \author{
 \packageAuthor{BMI713pack}

@@ -1,12 +1,12 @@
 Package: BMI713pack
 Title: support for HMS BMI713
-Version: 0.0.9
+Version: 0.0.13
 Author: VJ Carey <stvjc@channing.harvard.edu>
 Description: This package provides support for HMS BMI713.
-Suggests: 
-Depends: rmarkdown, airway, EnsDb.Hsapiens.v75, Gviz
-Imports: readxl, GenomeInfoDb, png, grid, microbenchmark,
-	ensembldb
+Suggests: RNAseqData.HNRNPC.bam.chr14
+Depends: rmarkdown, airway, EnsDb.Hsapiens.v75, Gviz, png, dplyr
+Imports: readxl, GenomeInfoDb, grid, microbenchmark,
+	ensembldb, Rsamtools, GenomicRanges
 Maintainer: VJ Carey <stvjc@channing.harvard.edu>
 License: Artistic-2.0
 LazyLoad: yes

@@ -9,7 +9,7 @@ plotImage = function(pref="otocystImageA", ...) {
 }
 
 getOtoSheet = function(shnum=5) {
- xpath = dir(system.file("xlsx", package="BMI713pack"), full=TRUE)
+ xpath = dir(system.file("xlsx", package="BMI713pack"), full.names=TRUE)
  read_excel( xpath, sheet = shnum )
 }
 
@@ -21,7 +21,7 @@ getOtoClass = function() {
 }
 
 getOtoExprs = function() {
- xpath = dir(system.file("xlsx", package="BMI713pack"), full=TRUE)
+ xpath = dir(system.file("xlsx", package="BMI713pack"), full.names=TRUE)
  exsh = read_excel( xpath, sheet = 5 )
  cellnum = as.numeric(exsh[11:392,1][[1]])
  tmp = as.data.frame(exsh[-(1:10), -(1:7)])
@@ -40,7 +40,7 @@ getNdSox = function() {
 
 vcImages = function() {
   require(png)
-  alli = dir(system.file("images", package="BMI713pack"), full=TRUE, pattern="png$")
+  alli = dir(system.file("images", package="BMI713pack"), full.names=TRUE, pattern="png$")
   bn = basename(alli)
   allim = lapply(alli, readPNG)
   names(allim) = gsub(".png", "", bn)
