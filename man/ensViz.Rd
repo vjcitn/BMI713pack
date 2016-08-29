@@ -41,9 +41,9 @@ UCSC genome tag used for ideogram track collection
   \item{extra}{number of bases of padding around the region used to specify the \code{which}
 component of the \code{\link[Rsamtools]{ScanBamParam-class}} obtained
 with \code{EnsScanBamParam}}
-  \item{\dots}{
-otherwise ignored
-}
+  \item{\dots}{ for \code{EnsRegionTrack}, extra 
+   arguments to \code{\link[Gviz]{GeneRegionTrack}}
+ }
 }
 \details{
 If \code{ideo==TRUE}, the Gviz caching mechanism is used
@@ -83,9 +83,9 @@ if (require(RNAseqData.HNRNPC.bam.chr14)) {
  em
  parm = EnsScanBamParam(sym="HNRNPC")
  tr1 = AlignmentsTrack( fs[1] , param=parm, type="coverage", name="WT" )
- tr5 = AlignmentsTrack( fs[5] , param=parm, type="coverage", make="KO" )
- emt = EnsRegionTrack(sym="HNRNPC")
- plotTracks(list(tr1, tr5, emt), sizes=c(1,1,.7))
+ tr5 = AlignmentsTrack( fs[5] , param=parm, type="coverage", name="KO" )
+ emt = EnsRegionTrack(sym="HNRNPC", stacking="dense")
+ plotTracks(list(tr1, tr5, emt), sizes=c(1,1,.7), ylim=c(0,200))
  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

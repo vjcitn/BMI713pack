@@ -1,6 +1,5 @@
 exportPattern("..*")
 
-import(rmarkdown)
 import(Gviz)
 import(EnsDb.Hsapiens.v75)
 import(ensembldb)

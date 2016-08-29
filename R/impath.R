@@ -39,7 +39,6 @@ getNdSox = function() {
 }
 
 vcImages = function() {
-  require(png)
   alli = dir(system.file("images", package="BMI713pack"), full.names=TRUE, pattern="png$")
   bn = basename(alli)
   allim = lapply(alli, readPNG)
@@ -48,7 +47,6 @@ vcImages = function() {
 }
 
 exprStateTab = function(genename) {
- require(dplyr)
  ex = as.data.frame(getOtoExprs())
  cc = as.data.frame(getOtoClass())
  d = merge(ex, cc, by="cellnum")
