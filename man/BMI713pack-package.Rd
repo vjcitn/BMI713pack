@@ -33,6 +33,8 @@ to report on comparative performance of two functions
 \code{plotImage} is used to render a display from a publication
 
 \code{vcImages} is used to retrieve png files for rendering in lecture slides
+
+data element drosExprPatterns is from PMID 27071099
 }
 \author{
 \packageAuthor{BMI713pack}
