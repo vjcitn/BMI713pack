@@ -23,11 +23,12 @@ getOtoClass = function() {
 getOtoExprs = function() {
  xpath = dir(system.file("xlsx", package="BMI713pack"), full.names=TRUE)
  exsh = read_excel( xpath, sheet = 5 )
- cellnum = as.numeric(exsh[11:392,1][[1]])
+ cellnum = as.numeric(exsh[11:392,1])
  tmp = as.data.frame(exsh[-(1:10), -(1:7)])
  for (i in 1:ncol(tmp)) tmp[,i] = as.numeric(tmp[,i])
  colnames(tmp) = exsh[10,-(1:7)]
  tmp = data.frame(cellnum=cellnum, as.data.frame(tmp))
+ rownames(tmp) = 1:nrow(tmp) # instead of original row indices in excel
  tmp
 }
 
