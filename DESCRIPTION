@@ -1,6 +1,6 @@
 Package: BMI713pack
 Title: support for HMS BMI713
-Version: 0.0.16
+Version: 0.0.17
 Author: VJ Carey <stvjc@channing.harvard.edu>
 Description: This package provides support for HMS BMI713.
 Suggests: RNAseqData.HNRNPC.bam.chr14
@@ -9,5 +9,5 @@ Imports: readxl, GenomeInfoDb, grid, microbenchmark,
 	ensembldb, Rsamtools, GenomicRanges
 Maintainer: VJ Carey <stvjc@channing.harvard.edu>
 License: Artistic-2.0
-LazyLoad: yes
+LazyLoad: no
 BiocViews:
