@@ -3,6 +3,7 @@
 \alias{BMI713pack}
 %"compar"    "ensViz"    "impath"    "myst"      "plotImage"
 \alias{compar}
+\alias{bvnShine}
 \alias{impath}
 \alias{myst}
 \alias{plotImage}
@@ -33,6 +34,9 @@ to report on comparative performance of two functions
 \code{plotImage} is used to render a display from a publication
 
 \code{vcImages} is used to retrieve png files for rendering in lecture slides
+
+\code{bvnShine} is a zero argument function that starts a shiny app to explore BVN contours and
+perspective plot.
 
 data element drosExprPatterns is from PMID 27071099
 }
