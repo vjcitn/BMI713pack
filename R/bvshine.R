@@ -1,10 +1,11 @@
 
 bvnShine = function() {
 require(shiny)
+require(threejs)
+require(mvtnorm)
 
 # visualizer
 bvncont = function(npts=50, r=0, v1=2, v2=2, render="contour") {
- require(mvtnorm)
  vv = max(c(1,v1,v2)) # don't allow below 1
  x = seq(-2*vv,2*vv,length=npts)
  dom = matrix(0, nr=npts, nc=npts)
@@ -22,7 +23,6 @@ bvncont = function(npts=50, r=0, v1=2, v2=2, render="contour") {
     ", v2= ", v2, sep=""), labcex=.9, asp=1)
   }
  else {
-   require(threejs)
    mm = data.matrix(expand.grid(x,x))
    mm = cbind(mm, apply(mm,1,function(x)dmvnorm(x, sig=sig)))
    scatterplot3js( mm, renderer = "webgl" )
